@@ -1,5 +1,3 @@
-import './App.css';
-
 import {
     Button,
     Typography,
@@ -43,10 +41,7 @@ const useStyles = makeStyles({
     cardContent: {
         flexGrow: 1
     }
-
-
 });
-
 
 function App() {
     const classes = useStyles();
@@ -55,7 +50,6 @@ function App() {
     return (
         <>
             <CssBaseline/>
-
             <AppBar position="relative">
                 <Toolbar>
                     <PhotoCamera className={classes.icons}/>
@@ -89,16 +83,13 @@ function App() {
                                         Secondary action
                                     </Button>
                                 </Grid>
-
                             </Grid>
                         </div>
-
                     </Container>
                 </div>
 
                 <Container className={classes.cardGrid} maxWidth={"md"}>
                     <Grid container spacing={4}>
-
                         {cards.map(card => (
                             <Grid item key={card} xs={12} sm={6} md={4}>
                                 <Card className={classes.card} sx={{boxShadow: 3}}>
@@ -124,14 +115,9 @@ function App() {
                                 </Card>
                             </Grid>
                         ))}
-
-
                     </Grid>
                 </Container>
-
-
             </main>
-
         </>
     );
 }
